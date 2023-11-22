@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Age calculator</title>
+</head>
+<body>
+    <div class="main container">
+        <div class="container">
+            <form action="" id="form">
+                <div class="day">
+                    <label for="day" id="labelDay">DAY</label>
+                    <input type="text" name="day" id="day" placeholder="DD" min="1" max="31" minlength="1" maxlength="2" required>
+                    <div id="errorDay"></div>
+                </div>
+                <div class="month">
+                    <label for="MONTH" id="labelMonth">MONTH</label>
+                    <input type="text" name="MONTH" id="MONTH" placeholder="MM" min="1" max="12" minlength="1" maxlength="2" required>
+                    <div id="errorMonth"></div>
+                </div>
+                <div class="year">
+                    <label for="YEAR" id="labelYear">YEAR</label>
+                    <input type="text" name="YEAR" id="YEAR" placeholder="YY" min="1990" max="2023" minlength="4" maxlength="4" required>
+                    <div id="errorYear"></div>
+                </div>
+            </form>
+        </div>
+        <div class="container button">
+            <hr>
+            <a class="submitBtn">
+                <img src="../assets/images/icon-arrow.svg" alt="" >
+            </a>
+        </div>
+        <div class="container result">
+            <h2><span class="years">--</span> years</h2>
+            <h2><span class="months">--</span> months</h2>
+            <h2><span class="days">--</span> days</h2>
+        </div>
+        <div id="finalError"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

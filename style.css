@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'bold';
+    src: url('./assets/fonts/Poppins-Bold.ttf') format(truetype);
+}
+@font-face {
+    font-family: 'boldItalic';
+    src: url('./assets/fonts/Poppins-BoldItalic.ttf') format(truetype);
+}
+@font-face {
+    font-family: 'extraBold';
+    src: url('./assets/fonts/Poppins-ExtraBold.ttf') format(truetype);
+}
+@font-face {
+    font-family: 'extraBoldItalic';
+    src: url('./assets/fonts/Poppins-ExtraBoldItalic.ttf') format(truetype);
+}
+@font-face {
+    font-family: 'italic';
+    src: url('./assets/fonts/Poppins-Italic.ttf') format(truetype);
+}
+@font-face {
+    font-family: 'regular';
+    src: url('./assets/fonts/Poppins-Regular.ttf') format(truetype);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 500px; */
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 86%);
+}
+html {
+    font-size: 18px;
+}
+.main.container {
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    border-radius: 1rem 1rem 5rem 1rem;
+    /* width: 1440px; */
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'bold';
+    color: hsl(0, 1%, 44%);
+
+}
+.day,
+.month,
+.year {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+label {
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+}
+.day input,
+.month input,
+.year input {
+    width: 6rem;
+    margin-top: 0.5rem;
+    border: solid 0.2px  hsl(0, 0%, 86%);
+    outline: none;
+    border-radius: 0.2rem;
+    padding: 0.4rem ;
+}
+.container.button {
+    display: flex;
+    align-items: center;
+}
+.container.button hr {
+    width: 100%;
+}
+img {
+    background-color: hwb(259 30% 0%);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'extraBoldItalic';
+    font-size: 3rem;
+    color: hsl(0, 0%, 8%);
+}
+h2 span {
+    color: hwb(259 30% 0%);;
+}
+#errorDay {
+    color: red;
+    font-size: 0.6rem;
+    text-transform: capitalize;
+    font-family: italic;
+    padding-top: 0.3rem;
+}
+#errorMonth {
+    color: red;
+    font-size: 0.6rem;
+    text-transform: capitalize;
+    font-family: italic;
+    padding-top: 0.3rem;
+}
+#errorYear {
+    color: red;
+    font-size: 0.6rem;
+    text-transform: capitalize;
+    font-family: italic;
+    padding-top: 0.3rem;
+}
+#finalError {
+    text-align: center;
+    font-family: bold;
+    font-size: 0.9rem;
+    padding-top: 1.5rem;
+    color: red;
+}
+@media screen and (max-width: 375px) {
+    .container.button {
+        position: relative;
+    }
+    .container.button img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h2 {
+        font-family: 'extraBoldItalic';
+        font-size: 2rem;
+        color: hsl(0, 0%, 8%);
+    }
+    .result {
+        margin-top: 2rem;
+    }
+}
